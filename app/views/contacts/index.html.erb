@@ -1,0 +1,27 @@
+<h3>Xero Contacts</h3>
+<%= button_to( "Home", {:action => "index", :controller => "home"}, :method => :get) %>
+<br>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Email</th>
+  </tr>
+  <% @contacts.each do |contact| %>
+  <tr>
+    <td><%=  contact['FirstName'] %></td>
+    <td><%=  contact['LastName'] %></td> 
+    <td><%=  contact['EmailAddress'] %></td>
+  </tr>
+  <% end %>
+</table>
+<br>
+<%= button_to( "Organisation Info", {:action => "index", :controller => "organisation"}, :method => :get, :params => { xeroUid: @xeroUid }) %>
+
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>

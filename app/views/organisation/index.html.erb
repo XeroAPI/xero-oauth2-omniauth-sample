@@ -1,0 +1,8 @@
+<h3>Xero Organisation Information</h3>
+<p>Token Expires at <%= @tokenExpiresAt %></p>
+<%= button_to( "Home", {:action => "index", :controller => "home"}, :method => :get) %>
+<p><b>Name: </b><%= @org_info["Organisations"][0]["Name"] %></p>
+<p><b>Type: </b><%= @org_info["Organisations"][0]["OrganisationEntityType"] %></p>
+<p><b>ID: </b><%= @org_info["Organisations"][0]["OrganisationID"] %></p>
+<p><b>Currency: </b><%= @org_info["Organisations"][0]["BaseCurrency"] %></p>
+<%= button_to( "Get Contacts", {:action => "index", :controller => "contacts"}, :method => :get, :params => { xeroUid: @xeroUid }) %>
