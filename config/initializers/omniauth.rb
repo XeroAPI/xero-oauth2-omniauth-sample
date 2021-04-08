@@ -1,5 +1,5 @@
-ENV['xero_api_client_id'] = '5BF8161XXXXC4FC4XXXXC42C6310XXXX' #replace this with your own client_id
-ENV['xero_api_client_secret'] = 'Hgji76MyN2ylXXXXK1McWoeerXXXXimK7U1D2dgXXXXgMxi' #replace this with your own client_secret
+ENV['xero_api_client_id'] = '7615D492D8AA4E13977D1256F82403AF' #replace this with your own client_id
+ENV['xero_api_client_secret'] = '66r5LdeJHCLB7wJKjKrTaFviQZaOzF9D-3kg0vcMwPory_PH' #replace this with your own client_secret
 
 Rails.application.config.middleware.use OmniAuth::Builder do
   provider(
