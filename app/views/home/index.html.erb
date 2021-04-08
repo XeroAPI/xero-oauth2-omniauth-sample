@@ -1,2 +1,4 @@
 <h4>Xero Ruby Oauth2 Demo App</h4>
-<p><%= button_to  "Connect to Xero", "/auth/xero_oauth2" %></p>
+<p><%= form_tag('/auth/xero_oauth2', method: 'post') do %>
+  <button type='submit'>Connect to Xero</button>
+<% end %></p>
