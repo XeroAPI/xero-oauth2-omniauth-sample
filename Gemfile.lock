@@ -1,7 +1,7 @@
 PATH
   remote: ../xero-oauth2-omniauth-strategy
   specs:
-    omniauth-xero-oauth2 (0.9.4)
+    omniauth-xero-oauth2 (1.0.1)
       omniauth (~> 1.9.1)
       omniauth-oauth2 (~> 1.7.1)
 

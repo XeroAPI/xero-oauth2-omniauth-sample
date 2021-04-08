@@ -1,3 +1,5 @@
+require 'pp'
+
 class SessionsController < ApplicationController
   def create
     auth_hash = request.env['omniauth.auth']
@@ -10,6 +12,8 @@ class SessionsController < ApplicationController
     user.xeroTenantId = auth_hash['extra']['xero_tenants'][0]['tenantId']
     user.xeroTokenExpiresAt = auth_hash['credentials']['expires_at']
     user.save
+
+    pp(auth_hash)
 
     redirect_to controller: 'organisation', action: 'index', xeroUid: user.xeroUid
   end
