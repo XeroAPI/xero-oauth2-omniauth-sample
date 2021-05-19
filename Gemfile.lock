@@ -148,7 +148,8 @@ GEM
       omniauth (~> 2.0.0)
       omniauth-oauth2 (~> 1.7.1)
     public_suffix (4.0.6)
-    puma (3.12.6)
+    puma (4.3.8)
+      nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
     rack-protection (2.1.0)
@@ -250,7 +251,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   omniauth-xero-oauth2 (~> 1.0.2)
-  puma (~> 3.11)
+  puma (~> 4.3)
   rails (>= 6.0.2.2)
   sass-rails (~> 5.0)
   selenium-webdriver
