@@ -11,11 +11,11 @@ Rails 5.2.3
 ```
 
 ### Configuration
-Update the client_id and client_secret in /config/initializer/omniauth.rb with yours from developer.xero.com:
-
+Create a `.env` in the root of your project directory or replace the env.sample
 ```
-ENV['xero_api_client_id'] = '5BF816xxxx'
-ENV['xero_api_client_secret'] = 'Hgji76MyN2xxxx'
+CLIENT_ID=...
+CLIENT_SECRET=...
+SCOPES=...
 ```
 
 Notice that there is no redirect_uri specified here. By default omniauth uses /auth/xero_oauth2/callback. 

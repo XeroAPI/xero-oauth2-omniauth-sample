@@ -39,6 +39,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'dotenv-rails'
 end
 
 group :development do
@@ -62,6 +63,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # required gems for xero-ruby-oauth2 demo app
-# gem 'omniauth-xero-oauth2', :path => '../xero-oauth2-omniauth-strategy' # as a local gem
-gem 'omniauth-xero-oauth2', '~> 1.0.2'
+gem 'omniauth-xero-oauth2', :path => '../xero-oauth2-omniauth-strategy' # as a local gem
+# gem 'omniauth-xero-oauth2', '~> 1.0.2'
 gem 'faraday' #for making http calls
