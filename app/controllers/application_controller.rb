@@ -32,7 +32,7 @@ class ApplicationController < ActionController::Base
     }
 
     resp = Faraday.post(xero_token_endpoint) do |req|
-      req.headers['Authorization'] = 'Basic ' + Base64.strict_encode64(ENV['xero_api_client_id'] + ':' + ENV['xero_api_client_secret'])
+      req.headers['Authorization'] = 'Basic ' + Base64.strict_encode64(ENV['CLIENT_ID'] + ':' + ENV['CLIENT_SECRET'])
       req.headers['Content-Type'] = 'application/x-www-form-urlencoded'
       req.body = URI.encode_www_form(refresh_request_body_hash)
     end
