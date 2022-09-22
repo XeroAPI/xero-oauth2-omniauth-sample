@@ -1,5 +1,5 @@
 # Xero Ruby Oauth 2 Demo Rails Application
-This rails application demonstates how omniauth-xero-oauth2 gem can be used to interface with Xero OAuth2 API. 
+This rails application demonstates how [omniauth-xero-oauth2](https://github.com/XeroAPI/xero-oauth2-omniauth-strategy) gem can be used to interface with Xero OAuth2 API. 
 
 A quick demo of the app:
 ![demo-ruby-oauth2](https://user-images.githubusercontent.com/41350731/64585003-6443b180-d3da-11e9-82c3-116b41a99f8c.gif)
