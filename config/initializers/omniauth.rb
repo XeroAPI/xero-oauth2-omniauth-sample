@@ -4,6 +4,8 @@ Rails.application.config.middleware.use OmniAuth::Builder do
     ENV['CLIENT_ID'],
     ENV['CLIENT_SECRET'],
     scope: ENV['SCOPES'],
+    state: 'sup3r$ecretSt@te',
+    # provider_ignores_state: true
   )
 end
 
